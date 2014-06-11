@@ -2,7 +2,7 @@ import java.awt.*;
 import java.awt.event.*;
 
 
-public class Calculator extends Frame implements WindowListener
+public class CalculatorAWT extends Frame implements WindowListener
 {
 		double answer, input, temp = 1;
 		TextField Display;
@@ -15,7 +15,7 @@ public class Calculator extends Frame implements WindowListener
 		Button[] op = new Button[8];
 		private static final long serialVersionUID = 1L;
 		
-		public Calculator() throws NumberFormatException
+		public CalculatorAWT() throws NumberFormatException
 		{
 			addWindowListener(this);
 			
@@ -228,7 +228,7 @@ public class Calculator extends Frame implements WindowListener
 		
 		public static void main(String Args[])
 		{
-			new Calculator();
+			new CalculatorAWT();
 		}
 	
 }
